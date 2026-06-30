@@ -285,8 +285,16 @@ p {
 }
 
 .about-card .icon {
-    font-size: 3rem;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 /* Features Section */
