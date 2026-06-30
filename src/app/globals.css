@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #050505;
+  --color-indigo-custom: #6366F1;
+  --color-purple-custom: #A855F7;
+  
+  --color-background: var(--color-obsidian);
+  --color-foreground: #ffffff;
+  
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-obsidian);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glass utilities that could be handled via tailwind classes but nice to have globally */
+.liquid-glass {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, var(--color-indigo-custom), var(--color-purple-custom));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
